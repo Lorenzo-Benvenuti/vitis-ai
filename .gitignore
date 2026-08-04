@@ -1,0 +1,32 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+.env
+
+# Editors / IDEs
+.idea/
+.vscode/
+
+# OS cruft
+.DS_Store
+Thumbs.db
+
+# Dataset: keep the directory structure, ignore the images
+data/training/*/
+data/validation/*/
+
+# Trained models and checkpoints: keep the directory, ignore the weights.
+# Note the "data/model/*" form rather than "data/model/" — git will not
+# descend into an excluded directory, so a blanket rule would also hide
+# the .gitkeep below and the folder would never reach the repository.
+data/model/*
+!data/model/.gitkeep
+*.pth
+*.pt
+*.ckpt
